@@ -25,6 +25,7 @@
     --basic-yellow:#EFC84A;
     --basic-gray:  #4D4D4D;
     --basic-white: #ffffff;
+    --basic-gray-shining: #283136;
 }
 
 /* Global */
@@ -89,6 +90,30 @@ img {
 
 /*features*/
 
+
+
+/* info */
+
+.info-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.info-list {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-gray-shining);
+}
+
+.info-button {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #FB565A;
+}
+
+.info-button a {
+  color: var(--basic-white);
+}
 
 
 
