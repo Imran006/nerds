@@ -1,0 +1,27 @@
+/*fonts шрифт*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/web/roboto.woff2") format("woff2"),
+        url("../fonts/web/roboto.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/web/robotomedium.woff2") format("woff2"),
+        url("../fonts/web/robotomedium.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+}
+
+/*variavles цвета*/
+
+:root {
+    --basic-black: #000000;
+    --basic-res  : #FB565A;
+    --basic-green: #00CA74;
+    --basic-yellow:#EFC84A;
+    --basic-gray:  #4D4D4D;
+}
