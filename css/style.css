@@ -1,26 +1,29 @@
 /*fonts шрифт*/
 
 @font-face {
-  font-family: "Roboto";
+  font-family:  'Roboto';
   src: url("../fonts/web/robotobold.woff2") format("woff2"),
       url("../fonts/web/robotobold.woff") format("woff");
       font-weight: 400;
+      font-display: swap;
       font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     src: url("../fonts/web/roboto.woff2") format("woff2"),
         url("../fonts/web/roboto.woff") format("woff");
         font-weight: 700;
+        font-display: swap;
         font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     src: url("../fonts/web/robotomedium.woff2") format("woff2"),
         url("../fonts/web/robotomedium.woff") format("woff");
         font-weight: 500;
+        font-display: swap;
         font-style: normal;
 }
 
@@ -42,7 +45,7 @@
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto",Arial, sans-serif;
+  font-family: 'Roboto',Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -141,7 +144,7 @@ img {
 }
 
 .features-item h2 {
-  font-size: 24xp;
+  font-size: 24px;
   line-height: 30xp;
   font-weight: 700;
 }
@@ -197,8 +200,8 @@ img {
 /*text*/
 
 .text h1 {
-  font-size: 45xp;
-  line-height: 45xp;
+  font-size: 45px;
+  line-height: 45px;
   font-weight: 500;
 }
 
@@ -212,7 +215,7 @@ img {
   font-weight: 700;
 }
 /*news*/
-/*
+
 .news figure {
   background-color: var(--basic-gray);
 }
@@ -220,7 +223,44 @@ img {
 
 .news-list {
   list-style: none;
-}*/
+}
 
+.news-item h1 {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+}
 
+.news-item p {
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-gray-shining);
+}
 
+.news-item h2 {
+  font-size: 26px;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+/* серые картинки*/
+
+.img-grey-icon {
+  position: absolute;
+}
+.academy {
+  left: 31px;
+  top: 591px;
+}
+.borodinski {
+  left: 326px;
+  top: 575px;
+}
+.pink {
+  left: 638px;
+  top: 594px;
+}
+.mishka {
+  left: 944px;
+  top: 581px;
+}
