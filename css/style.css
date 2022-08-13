@@ -64,7 +64,8 @@ img {
 /*main navigation*/
 
 .main-header {
-  background-image: url(../img/content/grey-background.png);
+  background-color: #F2F2F2;
+  /*background-image: url(../img/content/grey-background.png);*/
 }
 
 .main-navigation {
@@ -75,9 +76,9 @@ img {
   background-color: transparent; /*может и нет*/
 }
 
-.main-navigation-wrapper {
+/*.main-navigation-wrapper {
   background-color: var(--basic-white);
-}
+}*/
 
 .site-navigation {
   list-style: none;
@@ -92,6 +93,7 @@ img {
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
+  text-decoration: underline;
 }
 
 
@@ -102,6 +104,7 @@ img {
 .site-navigation a:focus,
 .user-navigation a:focus {
   background-color: var(--basic-red);
+  text-decoration: none;
 }
 
 
@@ -245,9 +248,10 @@ img {
 
 /* серые картинки*/
 
-.img-grey-icon {
+/*.img-grey-icon {
   position: absolute;
 }
+*/
 .academy {
   left: 31px;
   top: 591px;
@@ -263,4 +267,130 @@ img {
 .mishka {
   left: 944px;
   top: 581px;
+}
+
+/* footer*/
+
+.main-footer {
+  /*background-color: #F2F2F2;*/
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.contacts a {
+text-decoration: underline;
+}
+.contacts p {
+  color: #666666;
+}
+
+.button-address {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-decoration: underline;
+}
+
+.button-address:hover,
+.button-address:focus {
+  text-decoration: none;
+}
+
+.contacts-phone {
+  color: #666666;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.footer-social p {
+  color: #444444;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+/*social button*/
+
+.social-button {
+  color: #E1E1E1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-red);
+}
+
+/* modal*/
+
+.modal {
+  width: 960px;
+  height: 590px;
+  left: 240px;
+  top: 1706px;
+  color: var(--basic-black);
+  background-color: #D7DCDE;
+  background-image: url(../img/content/model-fon.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+.modal h1 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.modal-item {
+  font-weight: 700;
+  line-height: 18px;
+}
+.modal-input {
+  color: #444444;
+  font-weight: 400;
+  width: 360px;
+  height: 50px;
+
+}
+/*modal form*/
+
+.modal-form input[type="text"] {
+  /*text-transform: uppercase;*/
+  border: 2px solid #D7DCDE;
+}
+
+.modal-input.modal-input-big {
+  width: 760px;
+  height: 118px;
+}
+
+.modal-button {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: 0px;
+}
+
+.modal-close {
+  width: 20.98px;
+  height: 20.98px;
+  border: 0px;
+  background-image: url(../img/svg/Close.svg);
+  background-color: #D7DCDE;
+}
+
+
+/*button*/
+
+.button {
+  text-decoration: underline;
+}
+.button:hover,
+.button:focus {
+  text-decoration: none;
 }
