@@ -5,33 +5,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>nerds</title>
+
+  <link rel="icon" href="favico.ico">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
         <img src="img/svg/nerds-logo.svg" width="159" height="71" alt="логотип nerds">
       </a>
-      <ul>
-        <li><a href="blank.html">студия</a></li>
-        <li><a href="blank.html">клиенты</a></li>
+      <div class="main-navigation-wrapper">
+      <div class="container">
+      <ul class="site-navigation">
+        <li><a href="#">студия</a></li>
+        <li><a href="#">клиенты</a></li>
         <li><a href="Catalog.html">магазин</a></li>
-        <li><a href="blank.html">контакты</a></li>
+        <li><a href="#">контакты</a></li>
       </ul>
-      <a>
-        <img src="img/svg/cart-icon.svg" width="15" height="16" alt="корзина">
-      </a>
-      <a href="blank.html">корзина</a>
+      <div class="user-navigation">
+        <img src="img/svg/cart-icon.svg" width="13" height="15" alt="корзина">
+      <a class="basket-link" href="#">корзина</a>
+      </div>
+      </div>
+      </div>
     </nav>
+    <h1>Магазин готовых шаблонов</h1>
   </header>
 
   <main>
-    <h1>Магазин готовых шаблонов</h1>
 
     <section>
       <h2>стоимость:</h2>
       <form method="get" action="file:///C:/Users/xxx/Desktop/nerds/Catalog.html">
+        <input type="range" type="range" max="15000">
+        <p>от</p><input type="text" placeholder="0">
+        <p>до</p><input type="text" placeholder="15000">
         <fieldset>
           <legend>сетка:</legend>
           <ul>

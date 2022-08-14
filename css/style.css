@@ -394,3 +394,12 @@ text-decoration: underline;
 .button:focus {
   text-decoration: none;
 }
+
+
+
+/* catalog*/
+.main-header h1 {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+}
