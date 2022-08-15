@@ -18,31 +18,44 @@
         <img src="img/svg/nerds-logo.svg" width="159" height="71" alt="логотип nerds">
       </a>
       <div class="main-navigation-wrapper">
-      <div class="container">
-      <ul class="site-navigation">
-        <li><a href="#">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a href="Catalog.html">магазин</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-      <div class="user-navigation">
-        <img src="img/svg/cart-icon.svg" width="13" height="15" alt="корзина">
-      <a class="basket-link" href="#">корзина</a>
-      </div>
-      </div>
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="#">студия</a></li>
+            <li><a href="#">клиенты</a></li>
+            <li><a href="Catalog.html">магазин</a></li>
+            <li><a href="#">контакты</a></li>
+          </ul>
+          <div class="user-navigation">
+            <img src="img/svg/cart-icon.svg" width="13" height="15" alt="корзина">
+            <a class="basket-link" href="#">корзина</a>
+          </div>
+        </div>
       </div>
     </nav>
     <h1>Магазин готовых шаблонов</h1>
   </header>
 
-  <main>
+  <main class="catalog-container">
 
-    <section>
+    <section class="parametrs">
+
       <h2>стоимость:</h2>
+
       <form method="get" action="file:///C:/Users/xxx/Desktop/nerds/Catalog.html">
-        <input type="range" type="range" max="15000">
-        <p>от</p><input type="text" placeholder="0">
-        <p>до</p><input type="text" placeholder="15000">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <div class="filter-range">
+          <div class="price-controls">
+            <p>от</p> <input type="text"  value="0">
+            <p>до</p> <input type="text"  value="15000">
+          </div>
+        </div>
+
         <fieldset>
           <legend>сетка:</legend>
           <ul>
@@ -85,7 +98,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">показать</button>
+        <button class="btn-transparent" type="submit">Показать</button>
       </form>
     </section>
 
