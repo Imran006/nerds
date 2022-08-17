@@ -374,6 +374,7 @@ text-decoration: underline;
   color: var(--basic-white);
   background-color: var(--basic-red);
   border: 0px;
+  cursor: pointer;
 }
 
 .modal-close {
@@ -382,6 +383,7 @@ text-decoration: underline;
   border: 0px;
   background-image: url(../img/svg/Close.svg);
   background-color: #D7DCDE;
+  cursor: pointer;
 }
 
 
@@ -405,7 +407,9 @@ text-decoration: underline;
   text-align: center;
 }
 
-/* parammetrs */
+/* parammetrs*/
+
+
 
 .filter-range {
   color: #283136;
@@ -475,4 +479,170 @@ text-decoration: underline;
 
 .range-toggle-max {
   left: 60%;
+}
+
+/* parametrs-slider */
+
+
+
+.parametrs-slider legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.parametrs-list {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--basic-gray-shining);
+}
+
+.parametrs-content {
+  border: none;
+}
+
+.radio-input {
+  width: 25px;
+  height: 25px;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.radio-input:hover {
+  opacity: 0.7;
+}
+
+.checkbox-input {
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+.checkbox-input:hover {
+  opacity: 0.7;
+}
+
+.btn-transparent {
+  border: none;
+  width: 260px;
+  height: 50px;
+  background-color: #EEEEEE;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
+.btn-transparent:hover {
+  background-color: #DFDFDF;
+}
+.btn-transparent:focus {
+   color: #D5D5D5;
+}
+
+/* catalog-main-content */
+
+.catalog-main-content h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.catalog-main-content-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.catalog-main-content-img{
+  width: 11px;
+  height: 10px;
+}
+
+.catalog-main-content-list ul {
+  list-style: none;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.catalog-main-content-list ul:hover {
+  opacity: 0.6;
+}
+.catalog-main-content-list ul:active {
+  opacity: 1;
+}
+
+
+/* catalog-main-content */
+
+.catalog-wrapper-sedona {
+  display: none;
+}
+.catalog-wrapper img:hover ~ .catalog-wrapper-sedona {
+  display: block;
+}
+
+.catalog-wrapper-pink {
+  display: none;
+}
+.catalog-wrapper img:hover ~ .catalog-wrapper-pink {
+  display: block;
+}
+
+.catalog-wrapper-barbershop {
+  display: none;
+}
+.catalog-wrapper img:hover ~ .catalog-wrapper-barbershop {
+  display: block;
+}
+
+.catalog-wrapper-mishka {
+  display: none;
+}
+.catalog-wrapper img:hover ~ .catalog-wrapper-mishka {
+  display: block;
+}
+
+.catalog-wrapper-plus {
+  display: none;
+}
+.catalog-wrapper img:hover ~ .catalog-wrapper-plus {
+  display: block;
+}
+
+.catalog-wrapper-kvast {
+  display: none;
+}
+.catalog-wrapper img:hover ~ .catalog-wrapper-kvast {
+  display: block;
+}
+
+/* main-content-number */
+
+/* .catalog-wrapper-number ul {
+  list-style: none;
+} */
+.number-list {
+  list-style: none;
+}
+.number-item {
+width: 50px;
+height: 50px;
+background-color: red;
+border: 3px solid #DBDBDB;
+text-align: center;
+}
+.number-item a {
+  color: #000000;
+  line-height: 18px;
+}
+
+.number-item a:hover {
+  color: #00CA74;
+}
+
+.number-item-next  {
+  background-color: yellow;
+  width: 260px;
+  height: 50px;
+  text-align: center;
 }
