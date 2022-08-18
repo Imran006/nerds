@@ -63,6 +63,13 @@ img {
 
 /*main navigation*/
 
+.main-header-logo img:hover {
+  opacity: 0.8;
+}
+.main-header-logo img:active {
+  opacity: 0.3;
+}
+
 .main-header {
   background-color: #F2F2F2;
   /*background-image: url(../img/content/grey-background.png);*/
@@ -93,20 +100,22 @@ img {
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
-  text-decoration: underline;
-}
-
-
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:focus {
-  background-color: var(--basic-red);
   text-decoration: none;
 }
 
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: var(--basic-red);
+}
+.site-navigation a:active,
+.user-navigation a:active {
+  opacity: 0.3;
+}
+.site-navigation a:focus,
+.user-navigation a:focus {
+  margin: 5px;
+}
 
 /* info */
 
@@ -123,17 +132,23 @@ img {
   color: var(--basic-gray-shining);
 }
 
-.info-button {
-  font-size: 16px;
+.info-button button {
   line-height: 18px;
-  font-weight: 500;
-  background-color: #FB565A;
   width: 240px;
   height: 50px;
+  color: white;
+  background: var(--basic-red);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.info-button a {
-  color: var(--basic-white);
+.info-button button:hover {
+  background: #E74246;
+}
+.info-button button:active {
+  color: #797878;
+  background: #D7373B;
 }
 
 /*features*/
@@ -389,13 +404,6 @@ text-decoration: underline;
 
 /*button*/
 
-.button {
-  text-decoration: underline;
-}
-.button:hover,
-.button:focus {
-  text-decoration: none;
-}
 
 
 
