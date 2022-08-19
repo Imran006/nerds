@@ -37,6 +37,7 @@
     --basic-gray:  #4D4D4D;
     --basic-white: #ffffff;
     --basic-gray-shining: #283136;
+    --basic-map: url(../img/content/map.png);
 }
 
 /* Global */
@@ -147,7 +148,7 @@ img {
   background: #E74246;
 }
 .info-button button:active {
-  color: #797878;
+  color: rgba(255, 255, 255, 0.3);
   background: #D7373B;
 }
 
@@ -173,39 +174,65 @@ img {
 }
 
 
-.button-red {
+.button-red button {
   font-size: 16xp;
   line-height: 18xp;
+  color: white;
   background-color: var(--basic-red);
   width: 160px;
   height: 50px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.button-red a {
-  color: var(--basic-white);
+.button-red button:hover {
+    background: #E74246;
+}
+.button-red button:active {
+    background: #D7373B;
+    color: rgba(255, 255, 255, 0.3);
 }
 
-.button-green {
+
+.button-green button {
   font-size: 16xp;
   line-height: 18xp;
+  color: white;
   background-color: var(--basic-green);
   width: 160px;
   height: 50px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.button-green a {
-  color: var(--basic-white);
+.button-green button:hover {
+  background: #00BC6C;
+}
+.button-green button:active {
+  background: #00AA62;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.button-yellow {
+.button-yellow button {
   font-size: 16xp;
   line-height: 18xp;
+  color: white;
   background-color: var(--basic-yellow);
   width: 160px;
   height: 50px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
-.button-yellow a {
-  color: var(--basic-white);
+
+.button-yellow button:hover {
+  background: #EAB534;
+}
+.button-yellow button:active {
+  background: #E5A722;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*index columns
@@ -263,11 +290,20 @@ img {
 
 /* серые картинки*/
 
-/*.img-grey-icon {
-  position: absolute;
+img.imge-grey {
+  filter: alpha (opacity=40);
+  opacity: 0.4;
 }
-*/
-.academy {
+img.imge-grey:hover {
+  filter: alpha (opacity=100);
+  opacity: 1;
+}
+img.imge-grey:active {
+  filter: alpha (opacity=10);
+  opacity: 0.1;
+}
+
+/* .academy {
   left: 31px;
   top: 591px;
 }
@@ -282,9 +318,9 @@ img {
 .mishka {
   left: 944px;
   top: 581px;
-}
+} */
 
-/* footer*/
+/* main-footer*/
 
 .main-footer {
   /*background-color: #F2F2F2;*/
@@ -292,8 +328,22 @@ img {
   background-repeat: repeat;
 }
 
+/* contacts */
+
+.contacts {
+  background-image: url(../img/content/map.png);
+  width: 1442px;
+  height: 418px;
+}
+.contacts-item {
+  width: 319px;
+  height: 308px;
+  background-color: white;
+  text-align: center;
+}
+
 .contacts a {
-text-decoration: underline;
+text-decoration: none;
 }
 .contacts p {
   color: #666666;
@@ -302,17 +352,18 @@ text-decoration: underline;
 .button-address {
   color: var(--basic-white);
   background-color: var(--basic-red);
-  text-decoration: underline;
-}
-
-.button-address:hover,
-.button-address:focus {
-  text-decoration: none;
+  width: 219px;
+  height: 50px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .contacts-phone {
   color: #666666;
 }
+
+/* footer-social */
 
 .footer-social ul {
   list-style: none;
@@ -347,14 +398,12 @@ text-decoration: underline;
 .modal {
   width: 960px;
   height: 590px;
-  left: 240px;
-  top: 1706px;
-  color: var(--basic-black);
-  background-color: #D7DCDE;
+ /* color: #000000; */
   background-image: url(../img/content/model-fon.jpg);
   background-position: 0 0;
   background-repeat: repeat;
   text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .modal h1 {
@@ -367,27 +416,33 @@ text-decoration: underline;
   line-height: 18px;
 }
 .modal-input {
-  color: #444444;
+  color: black;
   font-weight: 400;
   width: 360px;
   height: 50px;
-
 }
 /*modal form*/
 
 .modal-form input[type="text"] {
-  /*text-transform: uppercase;*/
   border: 2px solid #D7DCDE;
 }
+.modal-form input[type="text"]:hover {
+  border: 2px solid #B4B9BB;
+}
+.modal-form input[type="text"]:focus {
+  border: 2px solid #000000;
+}
 
-.modal-input.modal-input-big {
+.modal-input-big {
   width: 760px;
   height: 118px;
 }
 
 .modal-button {
-  color: var(--basic-white);
-  background-color: var(--basic-red);
+  width: 260px;
+  height: 50px;
+  color: white;
+  background: var(--basic-red);
   border: 0px;
   cursor: pointer;
 }
@@ -397,10 +452,19 @@ text-decoration: underline;
   height: 20.98px;
   border: 0px;
   background-image: url(../img/svg/Close.svg);
-  background-color: #D7DCDE;
+  filter: alpha (opacity=30);
+  opacity: 0.3;
+  background-color: transparent;
   cursor: pointer;
 }
-
+.modal-close:hover {
+  filter: alpha (opacity=100);
+  opacity: 1;
+}
+.modal-close:active {
+  filter: alpha (opacity=10);
+  opacity: 0.1;
+}
 
 /*button*/
 
