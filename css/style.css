@@ -456,7 +456,6 @@ img.imge-grey:active {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  /* text-align: center; */
 }
 
 .footer-social p {
@@ -464,7 +463,6 @@ img.imge-grey:active {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  /* text-align: center; */
 }
 
 /*social button*/
@@ -564,7 +562,15 @@ img.imge-grey:active {
 
 /* catalog*/
 
+.page-catalog{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  column-gap: 138px;
+  align-content: start;
+}
+
 .main-header h1 {
+  margin-bottom: 130px;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
@@ -572,7 +578,10 @@ img.imge-grey:active {
 
 /* parammetrs*/
 
-
+.parametrs {
+  width: 264px;
+  height: 762px;
+}
 
 .filter-range {
   color: #283136;
@@ -710,7 +719,14 @@ img.imge-grey:active {
 
 /* catalog-main-content */
 
-.catalog-main-content h2 {
+.catalog-main-content-list{
+  margin-bottom: 59px;
+  padding: 0;
+  width: 775px;
+  /* height: 19px; */
+}
+
+.catalog-main-content-list h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -745,17 +761,24 @@ img.imge-grey:active {
 /* catalog-main-content */
 
 
+.catalog-wrapper ul {
+  width: 360px;
+  height: 616px;
+  list-style: none;
+}
+
 .catalog-wrapper-cell {
   display: none;
 }
 
-.catalog-wrapper img:hover~.catalog-wrapper-cell {
+.catalog-wrapper ul:hover~.catalog-wrapper-cell {
   display: block;
 }
 
 .wrapper-img:hover {
-  opacity: 1;
+    opacity: 1;
 }
+
 
 .wrapper-img {
   opacity: 0.12;
@@ -814,6 +837,11 @@ img.imge-grey:active {
 
 
 /* main-content-number */
+
+.catalog-wrapper-number {
+  margin-top: 60px;
+  padding-bottom: 50px;
+}
 
 .number-button {
   color: #000000;
