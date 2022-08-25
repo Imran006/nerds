@@ -77,7 +77,19 @@ img {
   grid-template-columns:max-content 1fr max-content;
   width: 1160px;
   margin: auto;
-  padding: 48px 140px 17px 140px;
+  padding: 0 10px;
+}
+.main-navigation-wrapper2 {
+
+  width: 1160px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.container{
+  width: 1160px;
+  margin: auto;
+  padding: 0 10px;
 }
 
 /*main navigation*/
@@ -105,15 +117,13 @@ img {
   font-weight: 500;
   color: var(--basic-black);
   background-color: transparent;
-  /*может и нет*/
 }
 
-/*.main-navigation-wrapper {
-  background-color: var(--basic-white);
-}*/
+
 
 .site-navigation {
-  justify-self: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -183,13 +193,19 @@ img {
 
 /*features*/
 
+.features {
+  margin-bottom: 80px;
+}
+
 .features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.features-item {
-  text-align: center;
-}
 
 .features-item h2 {
   font-size: 24px;
@@ -276,6 +292,14 @@ img {
 
 /*text*/
 
+.index-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-position:center,0 0;
+  background-repeat: no-repeat,repeat;
+}
+
+
 .text h1 {
   font-size: 45px;
   line-height: 45px;
@@ -293,6 +317,7 @@ img {
 }
 
 /*news*/
+
 
 .news figure {
   background-color: var(--basic-gray);
@@ -322,6 +347,10 @@ img {
 }
 
 /* серые картинки*/
+
+.img-grey-icon {
+  margin-bottom: 79px;
+}
 
 img.imge-grey {
   filter: alpha (opacity=40);
@@ -363,15 +392,18 @@ img.imge-grey:active {
   background-repeat: repeat;
 }
 
+
 /* contacts */
 
 .contacts {
   background-image: url(../img/content/map.png);
-  width: 1442px;
+  /* width: 1442px; */
+  width: 100%;
   height: 418px;
 }
 
 .contacts-item {
+  background-image: none;
   width: 319px;
   height: 308px;
   background-color: white;
@@ -402,6 +434,20 @@ img.imge-grey:active {
 
 /* footer-social */
 
+/* .main-footer .container {
+
+} */
+
+.footer-social{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 71px 0;
+  margin-bottom: 68px;
+  /* justify-self: center; */
+}
+
+
+
 .footer-social ul {
   list-style: none;
 }
@@ -410,7 +456,7 @@ img.imge-grey:active {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .footer-social p {
@@ -418,7 +464,7 @@ img.imge-grey:active {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /*social button*/
