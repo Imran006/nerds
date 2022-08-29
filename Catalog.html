@@ -41,38 +41,49 @@
 
     <section class="parametrs">
 
-      <h2>стоимость:</h2>
-
       <form method="get" action="file:///C:/Users/xxx/Desktop/nerds/Catalog.html">
-        <div class="range-controls">
-          <div class="scale">
-            <div class="bar"></div>
+        <fieldset class="filter-item">
+          <legend>стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"
+                 style="width: 70%;margin-left: 0;">
+                </div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"
+              style="left: 0%;">
+            </div>
+              <div class="toggle toggle-max" tabindex="0"
+              style="left: 60%;">
+            </div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                oт <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
           </div>
-          <div class="range-toggle range-toggle-min"></div>
-          <div class="range-toggle range-toggle-max"></div>
-        </div>
-        <div class="filter-range">
-          <div class="price-controls">
-            <p>от</p> <input type="text" value="0">
-            <p>до</p> <input type="text" value="15000">
-          </div>
-        </div>
+        </fieldset>
 
         <div class="parametrs-slider">
           <fieldset class="parametrs-content">
             <legend>сетка:</legend>
             <ul class="parametrs-list">
-              <li>
-                <input class="radio-input" type="radio" name="сетка" value="адаптивная" id="filter-адаптивная">
+              <li class="filter-option">
+                <input  class="visually-hidden filter-input-radio" type="radio" name="сетка" value="адаптивная" id="filter-адаптивная">
                 <label for="filter-адаптивная">Адаптивная</label>
               </li>
-              <li>
-                <input class="radio-input" type="radio" name="сетка" value="фиксированная" id="filter-фиксированная"
+              <li class="filter-option">
+                <input  class="visually-hidden filter-input-radio" type="radio" name="сетка" value="фиксированная" id="filter-фиксированная"
                   checked>
                 <label for="filter-фиксированная">Фиксированная</label>
               </li>
-              <li>
-                <input class="radio-input" type="radio" name="сетка" value="резиновая" id="filter-резиновая">
+              <li class="filter-option">
+                <input  class="visually-hidden filter-input-radio" type="radio" name="сетка" value="резиновая" id="filter-резиновая">
                 <label for="filter-резиновая">Резиновая</label>
               </li>
             </ul>
@@ -80,24 +91,24 @@
           <fieldset class="parametrs-content">
             <legend>особенности:</legend>
             <ul class="parametrs-list">
-              <li>
-                <input class="checkbox-input" type="checkbox" name="слайдер" id="filter-слайдер" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="слайдер" id="filter-слайдер" checked>
                 <label for="filter-слайдер">Слайдер</label>
               </li>
-              <li>
-                <input class="checkbox-input" type="checkbox" name="блок преимуществ" id="filter-преимуществ">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="блок преимуществ" id="filter-преимуществ">
                 <label for="filter-преимуществ">Блок преимуществ</label>
               </li>
-              <li>
-                <input class="checkbox-input" type="checkbox" name="новости" id="filter-новасти" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="новости" id="filter-новасти" checked>
                 <label for="filter-новасти">Новости</label>
               </li>
-              <li>
-                <input class="checkbox-input" type="checkbox" name="галерея" id="filter-галерея">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="галерея" id="filter-галерея">
                 <label for="filter-галерея">Галерея</label>
               </li>
-              <li>
-                <input class="checkbox-input" type="checkbox" name="корзина" id="filter-корзина">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="корзина" id="filter-корзина">
                 <label for="filter-корзина">Корзина</label>
               </li>
             </ul>
@@ -115,13 +126,9 @@
           <li class="catalog-main-content-item">
             <a>по цене</a>
           </li>
-        </ul>
-        <ul>
           <li class="catalog-main-content-item">
             <a>по типу</a>
           </li>
-        </ul>
-        <ul>
           <li class="catalog-main-content-item">
             <a>по названию</a>
           </li>
@@ -130,8 +137,6 @@
           <li class="catalog-main-content-img">
             <a><img src="../nerds/img/svg/icon-down-dir.svg" alt="вниз"></a>
           </li>
-        </ul>
-        <ul>
           <li class="catalog-main-content-img">
             <a><img src="../nerds/img/svg/icon-up-dir.svg" alt="вверх"></a>
           </li>
@@ -247,6 +252,8 @@
 
   <footer class="main-footer">
 
+    <div class="container">
+
     <section class="contacts">
 
       <!-- <img src="img/content/map.png" width="1442" height="418" alt="карта"> -->
@@ -263,7 +270,6 @@
       </div>
     </section>
 
-    <div class="container">
       <section class="footer-social">
         <ul>
           <li>
@@ -278,7 +284,7 @@
           </li>
           <li>
             <a class="social-button" href="#">
-              <span>Фейсбук</span>
+              <span class="visually-hidden">Фейсбук</span>
               <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
               </svg>
@@ -286,7 +292,7 @@
           </li>
           <li>
             <a class="social-button" href="#">
-              <span>Инстаграм</span>
+              <span class="visually-hidden">Инстаграм</span>
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
